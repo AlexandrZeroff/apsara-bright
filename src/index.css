@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.p-default {
+  @apply px-4;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-[68px] font-normal;
+}
+
+h2 {
+  @apply text-2xl md:text-[28px] lg:text-[32px] font-normal;
+}
+
+h3 {
+  @apply text-base md:text-lg;
+}
+
+p {
+  @apply text-sm;
+}
+
+.nav-menu a,
+.header-nav-burger a {
+  @apply text-th-primary;
+}
+
+.nav-menu a:hover,
+.header-nav-burger a:hover {
+  @apply text-th-secondary;
+}
+
+a.iconBtn {
+  @apply border border-white rounded-lg w-44 h-12 text-th-secondary flex items-center justify-center text-lg;
+}
+
+a.iconBtn:hover {
+  @apply border-th-secondary;
+}
+
+a.btnImg::after {
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.06066 0.93934C2.47487 0.353553 1.52513 0.353553 0.93934 0.93934C0.353553 1.52513 0.353553 2.47487 0.93934 3.06066L3.06066 0.93934ZM15 16.5C15.8284 16.5 16.5 15.8284 16.5 15L16.5 1.5C16.5 0.671573 15.8284 5.74219e-07 15 5.74219e-07C14.1716 9.11394e-07 13.5 0.671574 13.5 1.5V13.5H1.5C0.671574 13.5 9.11394e-07 14.1716 5.74219e-07 15C5.74219e-07 15.8284 0.671573 16.5 1.5 16.5L15 16.5ZM0.93934 3.06066L13.9393 16.0607L16.0607 13.9393L3.06066 0.93934L0.93934 3.06066Z" fill="white"/></svg>');
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: block;
+  @apply text-center;
+}
+
+a.bottom-right::after {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.servicePrev {
+  transition: all 0.1s ease-in-out;
+}
+
+.servicePrev:hover {
+  transform: scale(1.01);
+}
+
+.serviceCard a {
+  @apply text-sm;
+}
+
+.serviceCard a:hover {
+  @apply text-th-secondary;
+}
+
+.userform label {
+  @apply text-sm text-th-primary;
+}
+
+.userform input {
+  @apply bg-th-grey rounded-md p-4 text-black text-sm mt-2;
+}
+
+#footer a {
+  @apply text-th-primary;
+}
+
+#footer a:hover {
+  @apply text-th-secondary;
+}
+
+.error-span {
+  @apply text-red-600 text-left mt-1 text-sm font-semibold;
+}
+
+.success-span {
+  @apply text-base text-green-600;
+}
